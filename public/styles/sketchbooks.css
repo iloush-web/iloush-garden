@@ -1,0 +1,155 @@
+body {
+    background-image: url("/images/backgrounds/rocks/green051.jpg");
+}
+
+
+.main_box {
+    border: 3px solid #ffffff96;
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+    /* background-color: rgb(246 245 242 / 53%); */
+
+    background-color: rgba(246, 245, 242, 0.644);
+    backdrop-filter: blur(6px);
+}
+
+.choose-sketchbook {
+    padding: 20px;
+    text-align: center;
+}
+
+.choose-sketchbook img {
+    transition: all ease 0.4s;
+    width: 40%;
+    filter: drop-shadow(0 0 15px #374d28);
+}
+
+.choose-sketchbook img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #c4eda7);
+}
+
+.sketchbook {
+    text-align: center;
+}
+
+
+#sketchbook-img {
+    width: 100%;
+    display: none;
+    /* border: 4px solid var(--text-color-highlight);
+    border-radius: 10px; */
+}
+
+#sketchbook-home-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#sketchbook-home-left {
+    text-align: center;
+    align-content: center;
+
+    border-right: 2px dashed var(--text-color-highlight);
+}
+
+#sketchbook-home-right {
+    
+}
+
+#sketchbook-home-img {
+    width: 300px;
+}
+
+
+.buttons-pages {
+    text-align: center;
+    /* background-color: rgb(246 245 242 / 53%);
+    border: 3px solid #ffffff; */
+    border-radius: 8px;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+
+    border: 3px solid #ffffff96;
+    background-color: rgba(246, 245, 242, 0.644);
+    backdrop-filter: blur(6px);
+}
+
+button {
+    font-size: 1em;
+    font-family: var(--text-font);
+    border: solid #2d3e2e 1px;
+    height: 30px;   
+    width: 30px;
+    border-radius: 4px;
+    margin-right: 3px;
+
+    transition: all ease 0.2s;
+}
+
+button:first-child {
+
+    width: 60px;
+
+}
+
+button.active {
+    color: white;
+  background: #6e8d70;
+  border: solid #2d3e2e 2px;
+    transform: scale(1.1);
+}
+
+button:focus {
+    color: white;
+  background: #6e8d70;
+  border: solid #2d3e2e 2px;
+    transform: scale(1.1);
+
+}
+
+button:hover {
+  background: #b1d1b3;
+  transform: scale(1.1);
+}
+
+.navigation {
+    padding: 5px;
+    margin: 10px auto;
+    text-align: center;
+    width: fit-content;
+    /* background-color: rgb(246 245 242 / 53%);
+    border: 3px solid #ffffff; */
+    border-radius: 8px;
+
+    border: 3px solid #ffffff96;
+    background-color: rgba(246, 245, 242, 0.644);
+    backdrop-filter: blur(6px);
+}
+
+@media only screen and (max-width: 530px) {
+
+
+    header img {
+    width: 90%;
+}
+
+.main_box {
+    margin: auto;
+    width: 95%;
+}
+
+.choose-sketchbook img {
+    width: 70%;
+}
+
+button {
+
+    margin-bottom: 5px;
+}
+
+
+}

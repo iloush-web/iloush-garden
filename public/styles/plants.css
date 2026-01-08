@@ -1,0 +1,47 @@
+#plants-container {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.plant {
+    width: 100%;
+    text-align: center;
+    transition: transform 0.4s ease;
+
+}
+
+.plant:hover {
+    transform: scale(1.04);
+}
+
+.plant img {
+    width: 100%;
+    border: 3px solid var(--text-color-highlight);
+}
+
+.plant-text p {
+    text-align: justify;
+}
+
+.plant-text {
+    padding: 30px;
+    /* height: 100%; */
+    width: 100%;
+    border: 3px solid var(--text-color-highlight);
+}
+
+.tippy-box[data-theme~='green'] {
+  background-color: white;
+  color: var(--text-color-highlight);
+  border-radius: 8px;
+  border: 1px solid var(--text-color-highlight);
+  box-shadow: 0 0px 12px var(--text-color-highlight);
+  
+}
+
+.tippy-box[data-theme~='green'] > .tippy-arrow::before {
+  color: white;
+}

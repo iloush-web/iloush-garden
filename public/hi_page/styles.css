@@ -1,0 +1,638 @@
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+/* VARIABLES */
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+
+:root {
+    --text-color: #000000;
+    --text-color-light: #ffffff;
+    --text-color_lighter: #383838;
+    --text-color-highlight: #064d0a;
+
+    --teghlight: #cfe0cf;
+
+
+    --text-font: "Lexend";
+    --text-font-h1: "SpecialElite";
+    --text-font-h2: "LexendReg";
+
+    --font-size: 16px;
+
+    --text-selection-color: #768e7b;
+    --text-selected-color: rgb(255, 255, 255);
+    --text-shadow: rgb(98, 253, 106);
+
+    /* --footer-bg-color: #d8efd4ed;
+    --footer-border-color: #80a078ed; */
+
+    --footer-bg-color: #d4e9efed;
+    --footer-border-color: #7978a0ed;
+
+    /* --card-shadow-color: rgb(113, 255, 108); */
+    --card-shadow-color: rgba(53, 178, 255, 0);
+
+
+    --background-color-menu: rgba(246, 245, 242, 0.945);
+}
+
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+/* FONTS */
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+
+/* @font-face {
+  font-family: "Roboto_reg";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype"); 
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto_bold";
+  src: url("../fonts/roboto/Roboto-ExtraBold.ttf") format("truetype"); 
+  font-weight: 800;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Electrolize";
+  src: url("../fonts/Electrolize/Electrolize-Regular.ttf") format("truetype"); 
+  font-weight: 400;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "SpecialElite";
+  src: url("../fonts/Special_Elite/SpecialElite-Regular.ttf") format("truetype"); 
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: url("../fonts/Lexend/static/Lexend-Light.ttf") format("truetype"); 
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LexendReg";
+  src: url("../fonts/Lexend/static/Lexend-Medium.ttf") format("truetype"); 
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+/* BASE */
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-font);
+    font-size: var(--font-size);
+
+    /* MAIN */
+    /* background-image: url("/images/backgrounds/nature/natfl031.jpg"); */
+
+    background-image: url("/images/backgrounds/holidays/holid029.gif");
+
+    /* background-image: url("/images/backgrounds/cloth/cloth068.jpg"); */
+    margin: 0;
+    padding: 10px;
+
+    cursor: url('/cursor.png'), auto;
+}
+
+/* Text */
+h1 {
+    font-family: var(--text-font-h1);
+    color: var(--text-color-highlight);
+    font-size: 1.4em;
+    margin: 0 0 0.3em 0;
+}
+
+h2 {
+    font-family: var(--text-font-h2);
+    color: var(--text-color-highlight);
+    font-size: 1.2em;
+    margin: 0.2em 0;
+}
+
+h6 {
+    color: var(--text-color-highlight);
+    font-size: 1em;
+    margin: 0.2em 0;
+    display: inline;
+}
+
+p {
+    color: var(--text-color);
+    margin: 0.2em 0;
+
+}
+
+details {
+  font-size: 0.8em;
+}
+
+/* Links */
+a {
+  text-decoration: underline;
+  margin: 0;
+}
+
+a,
+a:visited {
+  color: var(--text-color-highlight);
+}
+
+a:hover,
+a:focus {
+  color: var(--text-color);
+  text-decoration-style:dashed;
+}
+
+/* Lists */
+
+ul, ol {
+  margin: 0 0 0.8em 0;
+  padding: 0 1.2em;
+}
+
+ul li::marker {
+    color: var(--text-color-highlight);
+    font-family: var(--text-font-h2);
+}
+
+ol li::marker {
+    color: var(--text-color-highlight);
+    font-family: var(--text-font-h2);
+    font-size: 1em;
+    font-weight: 800;
+}
+
+li {
+  padding-bottom: 0.4em;
+}
+
+/* Selection */
+::selection { 
+    background: var(--text-selection-color);
+    color: var(--text-selected-color);
+    text-shadow:
+    0 0 0.2em var(--text-shadow);
+}
+
+mark {
+  /* Text highlighted by using the <mark> element */
+  background: var(--text-selection-color);
+  color: var(--text-selected-color);
+  text-shadow:
+  0 0 0.2em var(--text-shadow);
+}
+
+/* Scrollbar */
+
+/* html {
+    scrollbar-color: #458245 #714826;
+    scrollbar-width: thin;
+} */
+
+/* WEBKIT */
+
+.container ::-webkit-scrollbar {
+    width: 10px; 
+    background-color: #ffffff87;
+    border-radius: 10em;
+}
+
+.container ::-webkit-scrollbar-thumb {
+    background-color: var(--text-color-highlight);
+    border-radius: 10em;
+}
+
+.l_sidebar ::-webkit-scrollbar {
+    width: 6px; 
+    background-color: #d1deca;
+    border-radius: 6em;
+}
+
+.l_sidebar ::-webkit-scrollbar-thumb {
+    background-color: var(--text-color-highlight);
+    border-radius: 6em;
+}
+
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+/* MAIN */
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+
+/* #main-box {
+  width: 700px;
+  height: 700px;
+  background-color: #cbcbcbdc;
+  margin: 5vh auto 0 auto;
+  padding: 30px;
+}
+
+#scene-img {
+  position: relative;
+  top: 28px;
+  width: 45%;
+  margin: auto;
+}
+
+#scene-text {
+  position: relative;
+  top: 150px;
+}
+
+#scene {
+  margin: auto;
+  height: 528px;
+  width: 540px;
+
+  background-image: url("/hi_page/images/console2.png");
+
+  text-align: center;
+} */
+
+#bubble {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 15px;
+  right: -500px;
+}
+
+#bubble img {
+  height: 100px;
+}
+
+#new-year {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 580px;
+  right: -600px;
+}
+
+#arrow {
+  transform: rotate(160deg);
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 160px;
+  left: 1050px;
+}
+
+#card {
+    position: relative;
+    width: fit-content;
+    top: 20px;
+    left: 1100px;
+}
+
+#card img{
+  height: 130px;
+  width: 90px;
+  filter: drop-shadow(0px 0px 10px var(--card-shadow-color));
+  transition: all ease 0.5s;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.85);
+  }
+}
+
+#card img:hover{
+  filter: drop-shadow(0px 0px 10px rgb(122, 237, 255)) drop-shadow(0px 0px 5px rgb(122, 242, 255));
+}
+
+#console-bg {
+  margin: 5% auto auto auto;
+  height: 500px;
+  width: 1112px;
+  background-image: url("/hi_page/images/console6.png");
+  filter: drop-shadow(0px 0px 10px #393664) drop-shadow(0px 0px 4px #17171b);
+}
+
+#console-screen {  
+    background-color: #60795f;
+    width: 600px;
+    height: 339px;
+    position: relative;
+    top: 80px;
+    left: 250px;
+}
+
+.scene-img {
+  /* height: 100%; */
+  width: 600px;
+  height: 339px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.scene-img1 {
+  /* height: 100%; */
+  width: 600px;
+  height: 339px;
+  object-fit: cover;
+  
+  animation: slide1 20s linear infinite;
+}
+
+@keyframes slide1 {
+  from {
+    object-position: 0 -45px;
+  }
+  to {
+    object-position: 0 -140px;
+  }
+}
+
+.scene-img2 {
+  /* height: 100%; */
+  width: 600px;
+  height: 339px;
+  object-fit: cover;
+  
+  animation: slide2 10s linear infinite;
+}
+
+@keyframes slide2 {
+  from {
+    object-position: 0 -45px;
+  }
+  to {
+    object-position: 0 -120px;
+  }
+}
+
+.scene-img3 {
+  /* height: 100%; */
+  width: 600px;
+  height: 339px;
+  object-fit: cover;
+  
+  animation: slide3 10s linear infinite;
+}
+
+@keyframes slide3 {
+  from {
+    object-position: 0 -85px;
+  }
+  to {
+    object-position: 0 -142px;
+  }
+}
+
+.scene-img4 {
+  /* height: 100%; */
+  width: 600px;
+  height: 339px;
+  object-fit: cover;
+  
+  animation: slide4 10s linear infinite;
+}
+
+@keyframes slide4 {
+  from {
+    object-position: 0 -85px;
+  }
+  to {
+    object-position: 0 -142px;
+  }
+}
+
+.scene-img5 {
+  /* height: 100%; */
+  width: 600px;
+  height: 339px;
+  object-fit: cover;
+  
+  animation: slide5 20s linear infinite;
+}
+
+@keyframes slide5 {
+  from {
+    object-position: 0 -40px;
+  }
+  to {
+    object-position: 0 -130px;
+  }
+}
+
+
+#console-text {
+    width: fit-content;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    margin: auto;
+}
+
+#console-text p {
+  background-color: #00000047;
+  border: solid #00000000 3px;
+  border-radius: 5px;
+  color: white;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+#console-button {
+  width: 44px;
+  height: 45px;
+  position: relative;
+  top: -205px;
+  left: 992px;
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0%;
+    background-image: url(/hi_page/images/console_button_gray.png);
+  }
+
+  50% {
+    opacity: 100%;
+    background-image: url(/hi_page/images/console_button_gray.png);
+  }
+
+  to {
+    opacity: 0%;
+    background-image: url(/hi_page/images/console_button_gray.png);
+  }
+}
+
+#console-button:hover {
+  /* background-image: url(/hi_page/images/console_button_gray.png); */
+
+  animation: none;
+  background-image: url(/hi_page/images/console_button_gray.png);
+
+  /* border-radius: 100%;
+  filter: brightness(10%); */
+  /* width: 44px;
+  height: 45px;
+    position: relative;
+    top: -205px;
+    left: 992px; */
+}
+
+#console-button button {
+    height: 45px;
+    width: 44px;
+    color: #00000000;
+    background-color: #00000000;
+    border-color: #00000000;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+#console-button-first {
+  width: 44px;
+  height: 45px;
+  position: relative;
+  top: -205px;
+  left: 992px;
+}
+
+#console-button-first:hover {
+  background-image: url(/hi_page/images/console_button_gray.png);
+  /* width: 44px;
+  height: 45px;
+    position: relative;
+    top: -205px;
+    left: 992px; */
+}
+
+#console-button-first button {
+    height: 45px;
+    width: 44px;
+    color: #00000000;
+    background-color: #00000000;
+    border-color: #00000000;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+#welcome {
+  text-align: center;
+  background-color: #cfe0cf;
+  padding: 20px;
+  width: 600px;
+  height: 339px;
+}
+
+#welcome h1 {
+  text-align: center;
+}
+
+#welcome p {
+  text-align: center;
+}
+
+
+.text-animation {
+  opacity: 0; /* начальное значение непрозрачности */
+  animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
+  animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+  animation-duration: 0.5s; /* длительность анимации в 1 секунду */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: var(--footer-bg-color);
+  border-top: 4px solid var(--footer-border-color);
+  position: absolute;
+  width: 100%;
+  height: 34px;
+  left: 0px;
+  bottom: 0px;
+
+  align-content: center;
+}
+
+#phone-footer {
+  display: none;
+}
+
+#music {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  width: 15%;
+}
+
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+/* RESPONSIVE FOR MOBILE */
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+
+@media only screen and (max-width: 530px) {
+
+  :root {
+    --font-size: 16px;
+  }
+
+  
+  #console-bg {
+  margin: auto auto auto auto;
+  transform: scale(0.65) rotate(90deg);
+  position: absolute;
+  top: 180px;
+  left: -350px;
+}
+
+#music {
+  display: none;
+}
+
+footer {
+
+  display: none;
+
+}
+
+#phone-footer {
+  display: block;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  bottom: -350px;
+  left: 0px;
+  background-color: #d8efd4ed;
+  height: 60px;
+  width: 100%;
+  margin: auto;
+}
+
+#bubble {
+  display: none;
+}
+
+#new-year {
+  display: none;
+}
+ 
+
+}

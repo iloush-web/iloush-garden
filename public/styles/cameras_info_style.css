@@ -1,0 +1,402 @@
+:root {
+    --gray-color: rgb(78, 78, 78);
+    --light-gray-color: rgb(219, 219, 219);
+    --background-color-window: rgb(255, 255, 255)
+
+}
+
+body {
+    background-image: url(/images/backgrounds/nature/natfl050.jpg);
+    padding: 0px;
+}
+
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+/* My cameras */
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+
+/* .cameras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.cameracaption {
+  height: 240px;
+  width: 190px;
+  text-align: center;
+}
+
+.cameracaption p{
+    font-size: 0.8em;
+    margin-top: -5px;
+}
+
+.sonyrx100m2, .canona630, .fed5, .prakticam50bf, .smenasymbol, .sonydsct200 {
+  width: 190px; height: 190px;
+  margin: 0 auto;
+}
+
+.sonyrx100m2:hover, .canona630:hover, .fed5:hover, .prakticam50bf:hover, .smenasymbol:hover, .sonydsct200:hover {
+  background-position: 0px -190px;
+} */
+
+
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+/* My cameras */
+/* <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 */
+
+
+
+h1 {
+    text-align: center;
+}
+
+/* .main_box {
+    width: 60%;
+    margin: auto;
+} */
+
+.top-menu-decoration {
+    background-color: var(--background-color-window);
+    width: 100%;
+    border-bottom: 2px solid var(--gray-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-menu-decoration-buttons:hover {
+    background-color: var(--light-gray-color);
+}
+
+.top-menu-decoration-buttons p {
+    margin: 1px 10px 0 10px;
+    padding: 0;
+}
+
+header {
+    padding: 10px 0 0 0;
+}
+
+#logo-cameras {
+    width: 700px;
+}
+
+#cameras-box {
+    z-index: 10;
+    background-color: var(--background-color-window);
+    filter: drop-shadow(0 0 15px #000000);
+    border-radius: 8px;
+    width: 70%;
+    margin: auto;
+    border: 1px solid var(--gray-color);
+}
+
+.mac-window-buttons {
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid var(--gray-color);
+    background-color: var(--light-gray-color);
+    display: flex;
+    flex-wrap: wrap;
+    height: 25px;
+}
+
+.mac-window-buttons p {
+    margin-left: 400px;
+    color: var(--gray-color);
+}
+
+.mac-button {
+    margin: 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--gray-color);
+}
+
+.mac-button#red {
+    background-color: rgb(226, 41, 41);
+}
+
+.mac-button#red:hover {
+    background-color: rgb(255, 121, 121);
+}
+
+.mac-button#yellow {
+    background-color: rgb(255, 187, 0);
+}
+
+.mac-button#yellow:hover {
+    background-color: rgb(255, 227, 128)
+}
+
+.mac-button#green {
+    background-color: rgb(44, 171, 44);
+}
+
+.mac-button#green:hover {
+    background-color: rgb(102, 206, 102);
+}
+
+#camera {
+    padding: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.specs {
+    max-width: 500px;
+    padding-left: 30px;
+}
+
+.specs h1 {
+    text-align: center;
+}
+
+.facts {
+    margin: auto;
+    margin-top: 15px;
+    max-width: 700px;
+}
+
+.facts h1 {
+    text-align: center;
+}
+
+.gallery-logo {
+    text-align: center;
+}
+
+.gallery-logo img {
+    width: 300px;
+}
+
+.gallery-text h1{
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+.gallery-text p{
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+
+
+
+/* .main_box {
+  border: 3px solid var(--text-color-highlight);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: var(--background-color-menu);
+} */
+
+
+.sparkling_logo {
+    height: 65px;
+}
+
+.cameras-menu {
+    position: fixed;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    height: 220px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.cameras-dock {
+    z-index: 20;
+    /* background-color: var(--light-gray-color); */
+    background-color: #d5d5d5e8;
+    border: 1px solid #ffffffa1;
+
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 20%;
+    right: 20%;
+    height: 80px;
+}
+
+/* .cameras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+} */
+
+
+.cameracaption {
+  height: 120px;
+  width: 100px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.cameracaption:hover {
+  height: 220px;
+  width: 200px;
+}
+
+.cameratext {
+    color: black;
+    font-size: 0.8em;
+    margin-top: -5px;
+}
+
+.cameras-menu a {
+    text-decoration: none;
+}
+
+
+.sonyrx100m2 {
+    background: url('/images/cameras/cameras_190px/sony_rx100_m2.png') no-repeat left top;
+}
+
+.canona630 {
+    background: url('/images/cameras/cameras_190px/canon_a630.png') no-repeat left top;
+}
+
+.fed5 {
+    background: url('/images/cameras/cameras_190px/FED_5.png') no-repeat left top;
+}
+
+.prakticam50bf {
+    background: url('/images/cameras/cameras_190px/praktica_m50_bf.png') no-repeat left top;
+}
+
+.smenasymbol {
+    background: url('/images/cameras/cameras_190px/smena_symbol.png') no-repeat left top;
+}
+
+.sonydsct200 {
+    background: url('/images/cameras/cameras_190px/sony_dsc_t200.png') no-repeat left top;
+}
+
+
+.sonyrx100m2, .canona630, .fed5, .prakticam50bf, .smenasymbol, .sonydsct200 {
+  width: 100px; height: 100px;
+  margin: 0 auto;
+  background-size: cover;
+  transition: all 0.5s ease;
+
+  filter: drop-shadow(0 5px 5px #0000008e);
+}
+
+.cameracaption:hover .sonyrx100m2, .cameracaption:hover .canona630, .cameracaption:hover .fed5, .cameracaption:hover .prakticam50bf, .cameracaption:hover .smenasymbol, .cameracaption:hover .sonydsct200 {
+  width: 200px; height: 200px;
+  background-position: 0px -200px;
+}
+
+.text-right img {
+    height: 500px;
+}
+
+.text-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 530px) { 
+    
+    .gallery-logo img {
+    width: 80%;
+    }
+    
+    .text-right img {
+        height: 400px;
+        margin: auto;
+    }
+
+    .specs {
+    padding-left: 0;
+    padding-top: 30px;
+    }
+
+
+    #logo-cameras {
+        width: 90%;
+    }
+
+    #cameras-box {
+        width: 90%;
+    }
+
+    #camera {
+    padding: 20px;
+    max-height: 75vh;
+    overflow-y: auto;
+    }
+
+    .cameras-menu {
+        width: 100vw;
+        position: fixed;
+
+        bottom: 12px;
+        left: 0;
+        right: 0;
+        height: 120px;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-end;
+        justify-content: center;
+        align-content: flex-end;
+    }
+
+    .cameras-dock {
+        
+        width: 100vw;
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        height: 80px;
+    }
+
+    .cameracaption {
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
+    .cameracaption:hover {
+        height: 70px;
+        width: 70px;
+    }
+
+    .cameratext {
+        display: none;
+    }
+
+    .sonyrx100m2, .canona630, .fed5, .prakticam50bf, .smenasymbol, .sonydsct200 {
+        width: 50px; height: 50px;
+    }
+
+    .cameracaption:hover .sonyrx100m2, .cameracaption:hover .canona630, .cameracaption:hover .fed5, .cameracaption:hover .prakticam50bf, .cameracaption:hover .smenasymbol, .cameracaption:hover .sonydsct200 {
+        width: 70px; height: 70px;
+        background-position: 0px -70px;
+    }
+
+}

@@ -1,0 +1,214 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+@font-face {
+    font-family: "SpecialElite";
+    src: url("/fonts/Special_Elite/SpecialElite-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("/fonts/Lexend/static/Lexend-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+:root {
+    --dark-brown: #804e3c;
+    --dark-green: #414f3f;
+    --orange: rgb(255, 179, 87);
+    --orange-bg: rgba(255, 179, 87, 0.399);
+    --text-font: "Lexend";
+    --text-h-font: "SpecialElite";
+
+    /* 563d41 */
+}
+
+.gif-text {
+    height: 1.5em;
+}
+
+.gif-text-index {
+    height: 1.9em;
+}
+
+
+body {
+    background-color: #0f130b;
+    /* background-image: url('../images/bg_hikingShoes.png'); */
+    background-image: url('/images/backgrounds/nature/natfl200.jpg');
+    background-size: none;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    font-size: 18px;
+    font-family: var(--text-font), "Times New Roman";
+    margin: 0;
+}
+
+/* Selection */
+::selection {
+    background: var(--orange-bg);
+}
+
+
+p {
+    line-height: 1.5em;
+    /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.right {
+    float: right;
+    margin-left: 1em;
+}
+
+.left {
+    float: left;
+    margin-right: 1em;
+}
+
+.center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .small {
+        max-width: 60%;
+        height: auto;
+    }
+}
+
+.caption {
+    margin-top: 0;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+a {
+    color: var(--dark-brown);
+}
+
+a:hover {
+    background-color: var(--orange-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    /* color: #714e54; */
+    color: var(--dark-brown);
+    font-family: var(--text-h-font);
+}
+
+/*#CONTAINER is the rectangle that contains everything but the background!*/
+#container {
+    margin: 3em auto;
+    width: 90%;
+    max-width: 700px;
+    background-color: #efefef;
+    color: #353535;
+    outline-color: var(--orange);
+    outline-style: solid;
+    outline-width: 10px;
+    outline-offset: 0;
+}
+
+#content {
+    padding: 10px 5% 20px 5%;
+}
+
+
+/*HEADER STYLE*/
+#header {
+    font-family: var(--text-h-font);
+    background-color: var(--dark-brown);
+    padding: 1% 5% 0 5%;
+    /* border-color: #c1c0b5;
+    border-style: solid; */
+    /* border-width: 0 0 8px 0; */
+}
+
+#header ul {
+    list-style-type: none;
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+#header li {
+    font-size: 1.2em;
+    display: inline-block;
+    margin-right: 1.5em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+}
+
+#header li a {
+    color: white;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+/* #header li:last-child a {
+    color: var(--orange);
+} */
+
+#header li a:hover {
+    text-decoration: underline;
+}
+
+/*POST LIST STYLE*/
+#postlistdiv ul {
+    font-size: 1.2em;
+    padding: 0;
+    list-style-type: none;
+}
+
+#recentpostlistdiv ul {
+    font-size: 1.2em;
+    padding: 0;
+    list-style-type: none;
+}
+
+.moreposts {
+    font-size: 0.8em;
+    margin-top: 0.2em;
+}
+
+/*NEXT AND PREVIOUS LINKS STYLE*/
+#nextprev {
+    text-align: center;
+    margin-top: 1.4em;
+}
+
+/*DISQUS STYLE*/
+#disqus_thread {
+    margin-top: 1.6em;
+}
+
+/*FOOTER STYLE*/
+#footer {
+    font-size: 0.8em;
+    padding: 0 5% 10px 5%;
+}
+
+#back-to-index {
+    font-family: var(--text-h-font);
+    color: var(--dark-brown);
+    font-size: 1.4em;
+}

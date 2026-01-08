@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iloush garden</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/styles/main_styles.css">
+
+    <!-- <script src="https://iframe.chat/scripts/main.min.js"></script> -->
+    <script type="text/javascript" src="/scripts/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="/scripts/load_pages_w_animation.js"></script>
+    <!-- <script type="text/javascript" src="/scripts/load_cameras.js"></script> -->
+
+    <!-- Popups -->
+    <!-- <script src=" https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script> -->
+
+    <!-- Popups -->
+    <script src="/addons/tippyjs/popper.min.js"></script>
+    <script src="/addons/tippyjs/tippy-bundle.umd.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 -->
+        <!-- HEADER -->
+        <!-- <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 -->
+
+        <!-- <header>
+            <div class="logo_background">
+                <img class="sparkling_logo" src="/images/text_gifs/iloush_garden_multicolour5.gif">
+            </div>
+        </header> -->
+
+        <!-- <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 -->
+        <!-- LEFT SIDEBAR -->
+        <!-- <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 -->
+
+        <aside class="l_sidebar">
+
+            <div class="side_box">
+                <a href="/main_page.html"><img class="sparkling_logo"
+                        src="/images/text_gifs/iloush_garden_multicolour5.gif" style="width: 100%;"></a>
+            </div>
+
+
+            <div class="side_box">
+                <h1>Menu</h1>
+                <ul class="nav-bar">
+                    <li><a href="javascript:void(0);" onclick="homeLoad()">Home</a></li>
+                    <li><a href="javascript:void(0);" onclick="aboutLoad()">About me</a></li>
+                    <li><a href="/blog/index.html">Blog</a></li>
+                    <li><a href="javascript:void(0);" onclick="plantsLoad()">Plants </a><img class="new-gif"
+                            src="/images/gif/notification/new_green.gif"></li>
+                    <li><a href="/pages/cameras_info.html">My cameras <img class="new-gif"
+                                src="/images/gif/notification/new_green.gif"></a></li>
+                    <li><a href="/pages/art_gallery.html">Art gallery</a></li>
+                    <li><a href="/pages/sketchbooks.html">Sketchbooks tour</li>
+                    <li><a href="javascript:void(0);" onclick="packettracerLoad()">Packet Tracer</a></li>
+                    <li><a href="http://users4.smartgb.com/g/g.php?a=s&i=g44-83199-21">Guestbook</a></li>
+
+                    <!-- <img class="new-gif" src="/images/gif/notification/new_green.gif"> -->
+
+                    <!-- <li><a href="javascript:void(0);" onclick="guestbookLoad()">Guestbook <img class="new-gif" src="/images/gif/notification/new_green.gif"></li> -->
+
+                    <li><a href="javascript:void(0);" onclick="resoursesLoad()">Resourses</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="side_box" id="statuscafe">
+                <h1>Status</h1>
+                <!-- <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=iloush" defer></script> -->
+                <iframe loading="lazy"
+                    src="https://petrapixel.neocities.org/widgets/statuscafe?center=0&marquee=0&font-family=Trebuchet MS&font-size=16px&color=#383838&linkColor=#064d0a&username=iloush&hideUsername=0&timeColor=#064d0a&width=220px"
+                    frameborder="0" title="Status.Cafe Status"></iframe>
+            </div>
+
+            <div class="side_box" id="my-button">
+                <h1>My button</h1>
+                <a href="https://iloush.neocities.org/" target="_blank">
+                    <img src="https://iloush.neocities.org/images/button_iloush_garden.gif" alt="iloush garden">
+                </a>
+
+                <textarea
+                    rows="3"><a href="https://iloush.neocities.org/" target="_blank"><img src="https://iloush.neocities.org/images/button_iloush_garden.gif" alt="iloush garden"></a></textarea>
+                <h6>(Click, press Ctrl+A → Ctrl+C to copy)</h6>
+
+            </div>
+
+            <div class="side_box">
+                <h1>Changelog</h1>
+                <div class="changelog">
+                    <ul>
+                        <li><b>08.01.2026</b> <br> Maaany updates! Cute home page and new info in <a
+                                href="javascript:void(0);" onclick="aboutLoad()">about me page</a>
+                        </li>
+                        <li><b>06.01.2026</b> <br> Celebrating my 3rd place in the <a
+                                href="https://petrapixel.neocities.org/contest" target="_blank">Petapixel indie web
+                                contest!</a> New info on my <a href="javascript:void(0);" onclick="plantsLoad()">plants
+                                page!</a></a>
+                        </li>
+                        <li><b>27.12.2025</b> <br> New <a
+                                href="http://127.0.0.1:5500/blog/posts/2025-12-27-iloush-how-are-you.html">
+                                blog post</a> and New Year index style!
+                        </li>
+                        <li><b>7.12.2025</b> <br> New <a href="javascript:void(0);" onclick="plantsLoad()">plants
+                                page.</a> Update <a href="/blog/index.html">blog</a> style. Logo on the left side now.
+                        </li>
+                        <li><b>7.11.2025</b> <br> <a href="/pages/cameras_info.html">Upload new photos on Praktica M50
+                                BF!</a> Many css updates!!! New green style for photoviewer!</li>
+                        <li><b>5.11.2025</b> <br> Guestbook opens in iframe now, paint cursor for my site!</li>
+
+                        <li><b>2.11.2025</b> <br> Add cute <a href="/index.html">welcome page!!</a> My biggest art and
+                            code project rn!</li>
+                        <li><b>19.10.2025</b> <br> New post <a
+                                href="/blog/posts/2025-10-12-Art-project,-Indie-web-contest.html">I've entered the
+                                Petapixel indie web contest. New art idea.</a> Finally, nicknames on top of messages in
+                            the chat!</li>
+                        <li><b>21.09.2025</b> <br> Recent blog posts on the main page (right sidebar), first <a
+                                href="/blog/posts/2025-09-18-Starting-the-second-year-at-University.html">blog post!</a>
+                        </li>
+                        <li><b>17.09.2025</b> <br> Start making <a href="/blog/index.html">blog!</a></li>
+                        <li><b>16.09.2025</b> <br> Add a <a
+                                href="http://users4.smartgb.com/g/g.php?a=s&i=g44-83199-21">guestbook!</a> Feel free to
+                            sign it!</li>
+                        <li><b>12.09.2025</b> <br> <a href="/pages/sketchbooks.html">Sketchbooks tour</a> A page where
+                            you can look through my sketchbooks!!</li>
+                        <li><b>11.09.2025</b> <br> <a href="/pages/art_gallery.html">My art gallery</a> is here! Upload
+                            my fav arts. Little fixes everywhere.</li>
+                        <li><b>30.08.2025</b> <br> <a href="/pages/cameras_info.html">Cameras and photos page</a> done
+                            (really cool gallery)! Updated <a href="javascript:void(0);" onclick="aboutLoad()">about
+                                me</a>. Update welcome page!</li>
+                        <li><b>27.08.2025</b> <br> Add a gallery to the <a href="/pages/cameras_info.html">Cameras and
+                                photos page!</a> (try to click on images!). Add photos for some cameras!</li>
+                        <li><b>26.08.2025</b> <br> Start <a href="/pages/cameras_info.html">Cameras and photos page!</a>
+                        </li>
+                        <li><b>25.08.2025</b> <br> Add animation when switching between pages! It was a challenge to
+                            code JavaScript... Add status!</li>
+                        <li><b>24.08.2025</b> <br> Dynamic content loading using jQuery to load website pages. (the menu
+                            is no longer reloaded when navigating between pages)</li>
+                        <li><b>23.08.2025</b> <br> <a href="/pages/cameras_info.html">New camera icons!</a> Hower to
+                            see! <a href="javascript:void(0);" onclick="aboutLoad()">About me!</a> Page about me, my
+                            hobbies and what i like. Smaller font, update menu.</li>
+                        <li><b>22.08.2025</b> <br> New pages! <a href="javascript:void(0);"
+                                onclick="homeLoad()">"Home"</a>, <a href="/pages/cameras_info.html">"My cameras"</a>, <a
+                                href="javascript:void(0);" onclick="packettracerLoad()">:"Packet Tracer"</a>!!! Fixed
+                            sidebars and more gifs! More things in "To do"</li>
+                        <li><b>21.08.2025</b> <br> New background! Removed landing page. Mobile responsive a little bit?
+                            Font, emoji in the chat.</li>
+                        <li><b>20.08.2025</b> <br> Add CHAT! New boxes for side menu. Sparkling logo!</li>
+                        <li><b>19.08.2025</b> <br> Add welcome page and working on the website menu.</li>
+                        <li><b>18.08.2025</b> <br> First version. Neocities tutorial.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="side_box">
+                <h1>To do</h1>
+                <div class="to-do">
+                    <ul>
+                        <li>Style project</li>
+                        <li>Page "My flowers"</li>
+                        <li>Page "My fav characters"</li>
+                        <li>Fix links (I use jQuery)</li>
+                    </ul>
+
+                </div>
+
+        </aside>
+
+        <!-- <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 -->
+        <!-- RIGHT SIDEBAR -->
+        <!-- <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 -->
+        <aside class="r_sidebar">
+
+            <div class="side_box">
+                <h1>My mood</h1>
+                <a href="https://www.imood.com/users/iloush" target='_blank'><img
+                        src="https://moods.imood.com/display/uname-iloush/trans-1/imood.gif" width="80px"
+                        alt="The current mood of iloush at www.imood.com"></a>
+            </div>
+
+            <div class="side_box" id="web-contest-side">
+                <h1>I win?!</h1>
+                <p>I have the 3rd place in the <a href="https://petrapixel.neocities.org/contest"
+                        target="_blank">Petapixel indie web contest!</a></p>
+                <hr>
+                <p>Thank you for your support, guys!</p>
+                <hr>
+                <!-- <img src="/images/bages/bronze.png"> -->
+                <a a href="https://petrapixel.neocities.org/contest" target="_blank"><img src="/images/bages/bronze.gif"
+                        style="width: 70%;"></a>
+            </div>
+
+
+            <div class="side_box">
+                <div id="recentpostlistdiv"></div>
+                <!-- <a href="/blog/archive.html">All posts</a> -->
+            </div>
+
+
+
+            <!-- CHAT -->
+            <!-- <div class="side_box" id="chat_box">
+
+                <h1 id="ChatH1">Chat</h1>
+                <details>
+                    <summary><a>Chat rules ♡</a></summary>
+                    <ul>
+                        <li><strong>Be kind.</strong> No hate, insults, bullying, or harassment. Everyone is welcome,
+                            but cruelty is not.</li>
+                        <li><strong>Protect privacy.</strong> Never share personal info — yours or others' (like real
+                            names, addresses, photos, or private messages).</li>
+                        <li><strong>No spam or ads.</strong> Gentle sharing of art or projects is okay. Loud
+                            self-promotion is not.</li>
+                        <li><strong>Respect the vibe.</strong> This is a calm, creative space. Avoid caps-lock,
+                            flooding, or disruptive behaviour.</li>
+                        <li><strong>No illegal or harmful content.</strong> This includes threats, gore, or anything
+                            that harms others.</li>
+                        <li><strong>This is a garden</strong> — act like a gardener, not a storm.</li>
+                    </ul>
+                    <p>This chat is a small, personal corner of the web. I don't moderate 24/7, but I may remove
+                        messages or block users if rules are broken.</p>
+                    <p><strong>Let's be kind to each other — this space grows on care.</strong></p>
+                    <p>— thanks, iloush ♡</p>
+                </details>
+                <iframe loading="lazy" src='https://iframe.chat/embed?chat=01217486' id='chattable'
+                    frameborder='0'></iframe>
+            </div>
+
+            <script>
+                chattable.initialize({
+                    stylesheet: "/styles/chattable.css",
+                });
+            </script> -->
+            <!-- CHAT -->
+
+
+
+
+            <div class="side_box" id="visitors">
+                <h1>Visitors ♡</h1>
+                <div class="visit_count">
+                    <script type="text/javascript" src="https://www.free-counters.org/count/ig59"></script><br>
+                    <a href='http://www.freevisitorcounters.com'>Free counter</a>
+                    <script type='text/javascript'
+                        src='https://www.whomania.com/ctr?id=19da06645affddc285bf5baedf4ffe54e71e1c3c'></script>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 -->
+        <!-- MAIN CONTENT -->
+        <!-- <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 -->
+
+        <main>
+
+            <!-- HI POST -->
+
+            <div id="content"></div>
+
+            <div id="home">
+                <div class="main_box">
+                    <h1>Welcome to the garden ♡</h1>
+
+                    <div class="hi-block">
+
+                        <div class="left-img">
+                            <img class="hi-image shadow-green" src="/images/arts/me/me_picrew.png">
+                        </div>
+
+                        <div class="right-text">
+
+                            <div class="centered-img">
+                                <img class="dancing-flowers-gif"
+                                    src="/images/gif/plants/line_of_dancing_plants_w_background.gif">
+                            </div>
+                            
+
+                            <h6>Nice to meet you! My name is iloush.</h6>
+                            <hr>
+                            <p>I'm an <mark>artist</mark> who studies <mark>computer science</mark> at university - I
+                                really love both.</p>
+                            <p>This is my little garden on the web, where I draw, take photos, and do all the things I
+                                enjoy.</p>
+                            <h6>You're welcome here.</h6> <br>
+
+                            <div class="centered-img">
+                                <img class="img80px" src="/images/gif/plants/butterflyrockplant.gif"
+                                    alt="butterfly rock plant">
+                                <img class="img80px" src="/images/gif/plants/mushroom1.gif" alt="butterfly rock plant">
+                                <img class="img70px" src="/images/gif/plants/flowers3.gif" alt="butterfly rock plant">
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="centered-img">
+                        <img class="img50px" src="/images/gif/packet_tr/computers_arrows.gif">
+                        <img class="img50px" src="/images/gif/scooby/scooby_running.gif">
+                        <img class="img50px" src="/images/gif/cameras/many_cameras.gif">
+                    </div> -->
+
+                    <hr>
+                    <div id="views-hit">
+                        <div style="text-align: center;"><img src="/images/gif/cats/cat_cleaning.gif"></div>
+                        <div>
+                            <h6>♡ We hit 10,000 views on Neocities! ♡</h6>
+                            <p>Thank you all so much for your support - I'm sending big hugs to everyone!</p>
+                            <p><mark>Jan 6, 2026</mark></p>
+                        </div>
+                        <div style="text-align: center;"><img src="/images/gif/cats/cat_wagging_tail.gif"></div>
+                    </div>
+                    <hr>
+
+                    <div id="two-column-hi">
+                        <div>
+                            <div class="centered-img">
+                                <img class="img60px" style="padding-right: 10px;"
+                                    src="/images/gif/cameras/dvd_camera_open.gif">
+                            </div>
+
+                            <p>I like taking photos with my <a href="/pages/cameras_info.html">digicams</a>, or even on
+                                <a href="/pages/cameras_info.html">film!</a>
+                            </p>
+                            <p>I also love <a href="javascript:void(0);" onclick="plantsLoad()">plants</a> - I have 7
+                                potted ones in my room.
+                            </p>
+
+                            <div class="centered-img">
+                                <img class="img60px" src="/images/chat_emoji/flower_rotating.gif">
+                            </div>
+
+                            <p>This is my first website made from scratch. I just recently started learning html and
+                                css,
+                                inspired by a video about indie websites.</p>
+
+                            <div class="centered-img">
+                                <img class="img50px" src="/images/chat_emoji/pink_flower.gif">
+                            </div>
+                        </div>
+
+                        <div id="idbuttons-hi">
+                            <img src="/images/buttons/idbuttons/male.png" alt="male">
+                            <img src="/images/buttons/idbuttons/20_years.png" alt="20 years">
+                            <img src="/images/buttons/idbuttons/uni_student.png" alt="uni_student">
+                            <img src="/images/buttons/idbuttons/artist.png" alt="artist">
+                            <img src="/images/buttons/idbuttons/scorpio.png" alt="scorpio">
+                            <img src="/images/buttons/idbuttons/rooster.png" alt="rooster">
+                            <img src="/images/buttons/idbuttons/procreate.png" alt="procreate">
+                            <a a href="https://petrapixel.neocities.org/contest" target="_blank"><img
+                                    src="/images/bages/bronze.png"></a>
+
+                        </div>
+
+                    </div>
+
+                    <hr>
+                    <br>
+
+                    <h1 id="have-fun-exploring"><img src="/images/gif/plants/flower.gif" alt="flower gif"> Have fun
+                        exploring! <img src="/images/gif/plants/flower.gif" alt="flower gif"></h1>
+                    
+
+                    <div class="centered-img">
+                        <img src="/images/gif/cameras/film_photos_loop_30px.gif">
+                    </div>
+
+                    <p>The garden is changing. Stay close to see what grows next.</p>
+                    <p>iloush ♡</p>
+                    
+
+                    <div class="centered-img">
+
+                    </div>
+
+                    <h2><a href="javascript:void(0);" onclick="aboutLoad()">More about me</a></h2>
+
+                </div>
+
+
+            </div>
+
+            <div id="about-me"></div>
+            <div id="my-cameras"></div>
+            <div id="packet-tracer"></div>
+            <div id="resourses"></div>
+            <div id="plants"></div>
+            <div id="guestbook"></div>
+
+
+
+
+            <!-- Link to Neocities -->
+            <div class="main_box">
+
+                <div class="follow-links">
+
+                    <div class="follow-link">
+                        <a href="https://neocities.org/site/iloush" target="_blank">
+                            <h1>Neocities profile</h1>
+                        </a>
+                        <!-- <a href="https://neocities.org/site/iloush" target="_blank"><img
+                                src="/images/blinkies/blinkies_iloush_garden_plant.gif"></a> -->
+                        <a href="https://neocities.org/site/iloush" target="_blank"><img
+                                src="/images/button_iloush_garden.gif" alt="iloush garden"></a>
+                    </div>
+
+                    <div class="follow-link">
+                        <a href="https://nekoweb.org/explore?page=1&sort=lastupd&by=name&q=iloush" target="_blank">
+                            <h1>Me on Nekoweb</h1>
+                        </a>
+                        <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
+                    </div>
+
+                    <div>
+
+                    </div>
+
+                    <!-- Neocities tutorial -->
+                    <!-- <div class="main_box">
+                    <h1>I like:</h1>
+        
+                    <ul>
+                    <li>Drawing</li>
+                    <li>Taking photos of friends</li>
+                    <li>Potted plants <a href="https://en.wikipedia.org/wiki/Monstera" target="_blank">like monstera</a></li>
+                    </ul>
+        
+                    <a href="http://neocities.org" target="_blank">Check out Neocities!</a> <br>
+                    <img src="/neocities.png">
+                    <p>Neocities tutorial ⬆️⬆️⬆️</p>
+                </div> -->
+
+
+        </main>
+
+        <!-- <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 -->
+        <!-- FOOTER -->
+        <!-- <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 -->
+        <footer class="landingFooter">
+            <div class="film-roll">
+                <img src="/images/gif/cameras/film_photos_loop_30px.gif">
+            </div>
+            <p>2025-2026. grown by iloush. <br> watered with tea and curiosity.</p>
+            <!-- VISITORS COUNTER -->
+            <div class="visit_count">
+                <a href='http://www.freevisitorcounters.com'>Free counter</a>
+                <script type='text/javascript'
+                    src='https://www.freevisitorcounters.com/auth.php?id=2032b68f3782f3dda9a2720bb6aa9ecc8fef176c'></script>
+                <script type="text/javascript"
+                    src="https://www.freevisitorcounters.com/en/home/counter/1378500/t/5"></script>
+            </div>
+
+            <!-- VISITORS COUNTER -->
+        </footer>
+
+    </div>
+
+    <!-- Recent blog posts -->
+    <script src="/blog/script.js"></script>
+
+    <!-- Popups
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script> -->
+
+
+
+
+
+
+</body>
+
+</html>

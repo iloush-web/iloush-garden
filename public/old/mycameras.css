@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/mainbackground.jpg");
+    background-size: cover;
+}
+
+.header h1 {
+    padding: 1vh;
+    background-color: #c7e99c;
+}
+
+.header p {
+    font-size: 25px;
+    color: rgb(194, 254, 214);
+    background-color: rgba(28, 44, 23, 0.643);
+    padding: 0vh 1vh 1vh 5vh;
+}
+
+.cameras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cameracaption p{
+    color: rgb(194, 254, 214);
+    background-color: rgba(28, 44, 23, 0.643);
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.sonyrx100m2 {
+    width: 300px; height: 300px;
+    background: url('/images/cameras/sony_rx100_m2.jpg') no-repeat left top;
+}
+
+.sonyrx100m2:hover { 
+    background-position: 0px -300px
+}
+
+.canona630 {
+    width: 300px; height: 300px;
+    background: url('/images/cameras/canon_a630.jpg') no-repeat left top;
+}
+
+.canona630:hover { 
+    background-position: 0px -300px
+}
+
+.fed5 {
+    width: 300px; height: 300px;
+    background: url('/images/cameras/FED_5.jpg') no-repeat left top;
+}
+
+.fed5:hover { 
+    background-position: 0px -300px
+}
+
+.prakticam50bf {
+    width: 300px; height: 300px;
+    background: url('/images/cameras/praktica_m50_bf.jpg') no-repeat left top;
+}
+
+.prakticam50bf:hover { 
+    background-position: 0px -300px
+}
+
+.smenasymbol {
+    width: 300px; height: 300px;
+    background: url('/images/cameras/smena_symbol.jpg') no-repeat left top;
+}
+
+.smenasymbol:hover { 
+    background-position: 0px -300px
+}
+
+.sonydsct200 {
+    width: 300px; height: 300px;
+    background: url('/images/cameras/sony_dsc_t200.jpg') no-repeat left top;
+}
+
+.sonydsct200:hover { 
+    background-position: 0px -300px
+}
+
+a {
+    font-size: 30px;
+    color: rgb(35, 58, 43);
+}
+
+.to_homepage {
+    color: white;
+    padding-left: 15px;
+}
