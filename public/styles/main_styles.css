@@ -386,6 +386,7 @@ a:focus {
 }
 
 #my-button img {
+    image-rendering: pixelated;
     padding-top: 2px;
     padding-bottom: 5px;
     transition: all 0.5s;
@@ -458,6 +459,10 @@ p {
     font-size: 2em;
     text-align: center;
     /* margin-bottom: 0.8em; */
+}
+
+.pixelated {
+    image-rendering: pixelated;
 }
 
 .h1-titles-top h1 {
@@ -563,6 +568,7 @@ p {
 }
 
 #idbuttons-hi img {
+    image-rendering: pixelated;
     width: 120px;
     padding-bottom: 5px;
     transition: all 0.3s ease;
@@ -590,6 +596,8 @@ p {
 .hi-image {
     height: 250px;
     transition: all 0.5s ease;
+    border: 4px solid var(--text-color-highlight);
+    border-radius: 20px;
 }
 
 .hi-image:hover {
