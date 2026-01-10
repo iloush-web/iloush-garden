@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iloush paint</title>
+    <link rel="stylesheet" href="/paint/style.css">
+
+    <link rel="stylesheet" href="/addons/tippyjs/light.css" />
+    <link rel="stylesheet" href="/addons/tippyjs/scale.css" />
+    <link rel="stylesheet" href="/addons/tippyjs/border.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <div class="tool-group">
+                <button id="brushBtn" class="mode-btn active"><img src="/paint/icons/brush.png" alt=""></button>
+                <button id="eraserBtn" class="mode-btn"><img src="/paint/icons/eraser.png" alt=""></button>
+                <button id="fillBtn" class="mode-btn"><img src="/paint/icons/fill.png" alt=""></button>
+            </div>
+
+            <div class="tool-group">
+                <input type="color" id="colorPicker" value="#36601d">
+            </div>
+
+            <div class="tool-group">
+                <input type="range" id="brushSize" min="1" max="20" value="1" class="tippy"
+                    data-tippy-content="try +- or []">
+                <span id="sizeValue">1</span>px
+                <canvas id="preview" width="30" height="30"></canvas>
+            </div>
+
+            <div class="tool-group">
+                <button id="undoBtn" class="do-btn"><img src="/paint/icons/undo.png" alt="" class="tippy"
+                        data-tippy-content="ctrl + z"></button>
+                <button id="redoBtn" class="do-btn"><img src="/paint/icons/redo.png" alt="" class="tippy"
+                        data-tippy-content="ctrl + shift + z"></button>
+            </div>
+
+            <div class="tool-group">
+                <button id="zoomInBtn" class="zoomBtns">+++</button>
+                <button id="zoomOutBtn" class="zoomBtns">---</button>
+                <button id="zoomFitBtn" class="zoomBtns">fit</button>
+            </div>
+
+            <div class="tool-group">
+                <button id="clearBtn">Clean</button>
+                <button id="saveBtn">Save</button>
+            </div>
+        </div>
+
+        <div class="canvas-container" id="canvas-container">
+            <canvas id="canvas"></canvas>
+            <div id="cursorPreview" class="cursor-preview"></div>
+        </div>
+
+        <div id="hi-hi">
+            <h1>Hi!! This page is still being developed!</h1>
+            <br>
+            <hr>
+            <br>
+            <p>
+                Try to draw pixel art here!
+                When you hover over some buttons, a hint with hotkeys will be shown.
+            </p>
+            <br>
+            <p>This page is part of a big future project!!</p>
+            <br>
+
+            <p>The garden is changing. Stay close to see what grows next.
+
+            </p>
+            <p> iloush ♡</p>
+        </div>
+
+        <div id="exit">
+            <a style="color: white;" href="/main_page.html">Back to the main page</a>
+        </div>
+    </div>
+
+    <script src="/paint/script.js"></script>
+    <script src="/addons/tippyjs/popper.min.js"></script>
+    <script src="/addons/tippyjs/tippy-bundle.umd.min.js"></script>
+
+    <script>
+        tippy('.tippy', {
+            followCursor: true,
+            theme: 'green',
+            animation: 'scale',
+            delay: [500, 50],
+        });
+
+    </script>
+
+
+</body>
+
+</html>

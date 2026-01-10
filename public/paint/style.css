@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: "LexendReg";
+    src: url("/fonts/Lexend/static/Lexend-Medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 6px;
+}
+
+body {
+    font-family: "LexendReg";
+    background: #1a1a1a;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.toolbar {
+    background: #7c8a5f;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 8px solid #11180f;
+}
+
+.tool-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tool-group label {
+    font-size: 14px;
+}
+
+#colorPicker {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border: 2px solid #11180f;
+    cursor: pointer;
+    background-color: white;
+}
+
+#colorPicker:hover {
+    background-color: #c0c0c0;
+}
+
+#brushSize {
+    cursor: pointer;
+}
+
+/* Style the entire slider */
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    /* background-image: url('/icons/brush_size.png'); */
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+/* Style the slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: url('/paint/icons/brush_size_button.png') no-repeat center;
+    background-size: contain;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    image-rendering: pixelated;
+}
+
+/* For Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    background: url('/paint/icons/brush_size_button.png') no-repeat center;
+    background-size: contain;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+/* Style the track */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 40px;
+    background: url('/paint/icons/brush_size.png') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 2px;
+}
+
+/* For Firefox */
+input[type="range"]::-moz-range-track {
+    width: 200px;
+    height: 40px;
+    background: url('/paint/icons/brush_size.png') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 2px;
+}
+
+#sizeValue {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+button {
+    font-family: "LexendReg";
+    /* padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s; */
+}
+
+button img {
+    padding-top: 3%;
+    height: 95%;
+    image-rendering: pixelated;
+}
+
+.do-btn {
+    height: 60px;
+    padding: 4px;
+    background: #ffffff;
+    color: #29461f;
+    border: 3px solid #11180f;
+}
+
+.do-btn:hover {
+    background: #c0c0c0;
+}
+
+.do-btn:active {
+    background-color: #71826b;
+}
+
+.mode-btn {
+    height: 80px;
+    width: 80px;
+    background: #ffffff;
+    color: #29461f;
+    border: 3px solid #11180f;
+}
+
+.mode-btn:hover {
+    background-color: #c0c0c0;
+}
+
+.mode-btn.active {
+    background-color: #71826b;
+}
+
+.zoomBtns {
+    height: 40px;
+    width: 60px;
+    background: #ffffff;
+    color: #29461f;
+    border: 3px solid #11180f;
+}
+
+.zoomBtns:hover {
+    background-color: #c0c0c0;
+}
+
+.zoomBtns:active {
+    background-color: #71826b;
+}
+
+#clearBtn {
+    padding: 5px;
+    background: #ffffff;
+    color: #29461f;
+    border: 3px solid #11180f;
+}
+
+#clearBtn:hover {
+    background: #ff6666;
+}
+
+#saveBtn {
+    padding: 5px;
+    background: #ffffff;
+    color: #29461f;
+    border: 3px solid #11180f;
+}
+
+#saveBtn:hover {
+    background: #66ff66;
+}
+
+#preview {
+    border: 2px solid #444;
+    background: #fff;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.canvas-container {
+    width: 100%;
+    height: 100%;
+
+    overflow: scroll;
+
+    /* flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: start; */
+    background: #2b3029;
+
+    position: relative;
+}
+
+.cursor-preview {
+    margin: 50px;
+    position: absolute;
+    pointer-events: none;
+    border: 2px solid #00ff00;
+    background: rgba(0, 255, 0, 0.2);
+    display: none;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    z-index: 10;
+}
+
+/* .cursor-preview {
+    position: relative;
+    pointer-events: none;
+    border: 2px solid #00ff00;
+    background: rgba(0, 255, 0, 0.2);
+    display: none;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    z-index: 10;
+} */
+
+#canvas {
+    margin: 50px;
+
+    background: #ffffff;
+    cursor: crosshair;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    /* Pixelated appearance */
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    /* Remove smoothing */
+    filter: none;
+}
+
+#exit {
+    background-color: #71826b;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+#hi-hi {
+    padding: 10px;
+    background-color: #5b6159;
+    border: 2px solid #dbdbdb;
+    width: 300px;
+    height: 440px;
+    position: fixed;
+    right: 100px;
+    bottom: 180px;
+}
+
+.tippy-box[data-theme~='green'] {
+    background-color: white;
+    color: #29461f;
+    border-radius: 8px;
+    border: 1px solid #29461f;
+}
+
+.tippy-box[data-theme~='green']>.tippy-arrow::before {
+    color: white;
+}
+
+@media only screen and (max-width: 530px) {
+
+    #hi-hi {
+        display: none;
+    }
+
+    .mode-btn {
+        height: 40px;
+        width: 40px;
+    }
+
+    .do-btn {
+        height: 40px;
+    }
+
+    .zoomBtns {
+        width: 40px;
+    }
+
+    .toolbar {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        gap: 5px;
+    }
+
+    #colorPicker {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cursor-preview {
+        margin: 5px;
+    }
+
+    #canvas {
+        margin: 5px;
+    }
+
+}
