@@ -7,6 +7,7 @@
     <title>iloush paint</title>
     <link rel="stylesheet" href="/paint/style.css">
 
+
     <link rel="stylesheet" href="/addons/tippyjs/light.css" />
     <link rel="stylesheet" href="/addons/tippyjs/scale.css" />
     <link rel="stylesheet" href="/addons/tippyjs/border.css" />
@@ -40,14 +41,16 @@
             </div>
 
             <div class="tool-group">
-                <button id="zoomInBtn" class="zoomBtns">+++</button>
-                <button id="zoomOutBtn" class="zoomBtns">---</button>
-                <button id="zoomFitBtn" class="zoomBtns">fit</button>
+                <button id="zoomInBtn" class="zoomBtns tippy" data-tippy-content="zoom in">+++</button>
+                <button id="zoomOutBtn" class="zoomBtns tippy" data-tippy-content="zoom out">---</button>
+                <button id="zoomFitBtn" class="zoomBtns tippy" data-tippy-content="standart size">fit</button>
             </div>
 
             <div class="tool-group">
-                <button id="clearBtn">Clean</button>
-                <button id="saveBtn">Save</button>
+                <button id="clearBtn" class="tippy" data-tippy-content="!!!clear your canvas!!!">Clean</button>
+                <button id="saveBtn" class="tippy" data-tippy-content="downloads to the computer">Save</button>
+                <button id="uploadBtn" class="tippy"
+                    data-tippy-content="uploads your work to the website! (it will be posted here at the bottom after verification. I check it quite often)">Upload</button>
             </div>
         </div>
 
@@ -56,31 +59,63 @@
             <div id="cursorPreview" class="cursor-preview"></div>
         </div>
 
+
+
         <div id="hi-hi">
-            <h1>Hi!! This page is still being developed!</h1>
-            <br>
-            <hr>
-            <br>
-            <p>
-                Try to draw pixel art here!
-                When you hover over some buttons, a hint with hotkeys will be shown.
-            </p>
-            <br>
-            <p>This page is part of a big future project!!</p>
-            <br>
-
-            <p>The garden is changing. Stay close to see what grows next.
-
-            </p>
-            <p> iloush ♡</p>
+            <h1><a href="#help">Need help?</a></h1>
         </div>
 
-        <div id="exit">
-            <a style="color: white;" href="/main_page.html">Back to the main page</a>
-        </div>
+
     </div>
 
+    <div id="pixelGallery">
+
+        <img id="pixelGalleryBubble" src="/paint/img/your_amazing_arts_here_bubble.gif"
+            alt="your amazing arts here (pixel speech bubble)">
+        <div class="arts-grid" id="arts-grid">
+            <!-- Arts load here -->
+        </div>
+
+    </div>
+
+    <div id="help">
+        <h1>Hi!</h1>
+        <p>
+            This page is still in development! <br> Write to me in <a href="https://users4.smartgb.com/g/g.php?a=s&i=g44-83199-21">guestbook</a> or in <a href="https://neocities.org/site/iloush">Neocities profile</a> if you have a question
+            or encounter a problem.
+            <br>
+            Or you can just write!
+            <br>
+            If something is unclear in the interface, try to hover the mouse and hold it, a tip will appear.
+            There are also convenient keyboard shortcuts (also visible in the tip)
+        </p>
+
+        <h1>Rules for Drawings</h1>
+        <ul>
+            <li>No hate, cruelty, bullying, or mockery.</li>
+            <li>No NSFW, nudity, or explicit content.</li>
+            <li>No offensive words or drawings.</li>
+            <li>No sharing of personal information - yours or others' (like names, photos, contacts).</li>
+            <li>I moderate every drawing before it appears.</li>
+            <li>If you want your art removed, please let me know in the <a href="https://users4.smartgb.com/g/g.php?a=s&i=g44-83199-21">guestbook</a> or via <a href="https://neocities.org/site/iloush">Neocities profile.</a></li>
+        </ul>
+        <h1>
+            About moderation</h1>
+        <p>
+            If your drawing didn't appear right away, that's fine.
+            The fact is that I check the images myself so that everyone is comfortable!
+
+        </p>
+    </div>
+
+    <footer>
+        <a href="/main_page.html">Back to the main page</a>
+        <br><br>
+        <p>iloush.neocities.org 2026 <a href="https://neocities.org/site/iloush">Neocities profile</a></p>
+    </footer>
+
     <script src="/paint/script.js"></script>
+    <script src="/paint/display_arts.js"></script>
     <script src="/addons/tippyjs/popper.min.js"></script>
     <script src="/addons/tippyjs/tippy-bundle.umd.min.js"></script>
 

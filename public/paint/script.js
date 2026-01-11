@@ -12,10 +12,12 @@ class PixelPaint {
         this.redoBtn = document.getElementById('redoBtn');
         this.clearBtn = document.getElementById('clearBtn');
         this.saveBtn = document.getElementById('saveBtn');
+
+        this.uploadBtn = document.getElementById('uploadBtn');
+
         this.preview = document.getElementById('preview');
         this.previewCtx = this.preview.getContext('2d');
         this.cursorPreview = document.getElementById('cursorPreview');
-
 
         this.canvasContainer = document.getElementById('canvas-container');
 
@@ -102,6 +104,8 @@ class PixelPaint {
 
         this.clearBtn.addEventListener('click', () => this.clearCanvas());
         this.saveBtn.addEventListener('click', () => this.saveImage());
+
+        this.uploadBtn.addEventListener('click', () => this.uploadImage());
 
         this.zoomInBtn.addEventListener('click', () => this.zoomIn());
         this.zoomOutBtn.addEventListener('click', () => this.zoomOut());
@@ -256,7 +260,39 @@ class PixelPaint {
         link.download = `pixel-art-${Date.now()}.png`;
         link.href = this.canvas.toDataURL();
         link.click();
-        
+
+        console.log(link.href);
+    }
+
+    uploadImage() {
+
+        if (confirm('do you want to upload the drawing to my website? (it will be shown here at the bottom of the page)')) {
+
+            let userName = prompt('Your name:');
+            let userSite = prompt('Your site: (optional)');
+            let userArt = this.canvas.toDataURL();
+
+            async function submitForm(userName, userSite, userArt) {
+                const actionUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfS-P2p4G13K9JN5PFDeQOg8ONU0rkYkXMJkSinpOWfrTEihg/formResponse";
+
+                const formData = new FormData();
+                formData.append('entry.2146595141', userName);
+                formData.append('entry.111079713', userSite);
+                formData.append('entry.1928160295', userArt);
+
+                await fetch(actionUrl, {
+                    method: 'POST',
+                    body: formData,
+                    mode: 'no-cors'
+                });
+
+            }
+
+            submitForm(userName, userSite, userArt);
+            alert('Successfully sent! Your drawing appeared after moderation (I check it every day)')
+
+        }
+
     }
 
     zoomIn() {
@@ -282,7 +318,7 @@ class PixelPaint {
 
         this.curCanvasSizeW = this.StandartCanvasSizeW;
         this.curCanvasSizeH = this.StandartCanvasSizeW;
-        
+
     }
 
     updatePreview() {
