@@ -330,6 +330,18 @@ button img {
     transition: all 0.5s ease;
 }
 
+#hi-hi-2 {
+    color: white;
+    padding: 10px;
+    width: 350px;
+    font-size: 18px;
+    background-color: #5b6159;
+    border: 2px solid #dbdbdb;
+    position: fixed;
+    right: 50px;
+    bottom: 200px;
+}
+
 #hi-hi a {
     color: white;
 }
@@ -364,6 +376,7 @@ footer a {
     width: 100%;
     max-width: 763px;
     transition: all 1s ease;
+    image-rendering: pixelated;
 }
 
 #pixelGalleryBubble:hover {
@@ -448,8 +461,31 @@ footer a {
 
 @media only screen and (max-width: 530px) {
 
+    body {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
     #hi-hi {
-        display: none;
+        display: block;
+        right: 20px;
+        bottom: 20px;
+        font-size: 7px;
+    }
+
+    #hi-hi-2 {
+        color: white;
+        padding: 5px;
+        width: 300px;
+        font-size: 12px;
+        background-color: #5b6159;
+        border: 2px solid #dbdbdb;
+        position: fixed;
+        right: 20px;
+        bottom: 60px;
     }
 
     .mode-btn {

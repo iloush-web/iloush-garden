@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async function () {
 
     const artsArray = await fetchGoogleSheetCSV();
-    console.log(artsArray[0]);
+    console.log(artsArray);
 
 
     const artsGrid = this.getElementById('arts-grid');
@@ -9,16 +9,16 @@ document.addEventListener('DOMContentLoaded', async function () {
     for (row of artsArray) {
         const art = document.createElement('div');
 
-        let siteLink = `<a href=${row[2]}>site</a>`;
+        let siteLink = `<a href="${row[2]}">site</a>`;
 
-        if ('<a href="no site">site</a>' == siteLink) {
+        if ('<a href="no site">site</a>' == siteLink | '<a href=""></a>' == siteLink) {
             siteLink = '';
         }
 
         // console.log(row[3])
         art.className = 'art-container';
         art.innerHTML = `
-                <p id="name-site">${row[1].slice(1, -1)}
+                <p id="name-site">${row[1]}
                 ${siteLink}
                 </p>
                 <img src=${row[3]} alt="pixel art from ${row[1].slice(1, -1)}">
