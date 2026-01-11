@@ -36,9 +36,9 @@ async function fetchGoogleSheetCSV() {
         const sheetName = "Sheet1";
 
         // CSV export
-        const csvUrl = "https://docs.google.com/spreadsheets/d/" + spreadsheetId + "/export?format=csv";
-        const response = await fetch(csvUrl);
+        const csvUrl = `https://docs.google.com/spreadsheets/d/${spreadsheetId}/gviz/tq?tqx=out:csv&sheet=${sheetName}`;
 
+        const response = await fetch(csvUrl);
 
         const csvText = await response.text();
 
@@ -54,7 +54,7 @@ async function fetchGoogleSheetCSV() {
             rows2.push(r2)
         }
 
-
+        
         // delete table head
         rows2.shift();
 
