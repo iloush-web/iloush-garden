@@ -1,0 +1,198 @@
+:root {
+    --text-color: #000000;
+
+    --gray-color: rgb(78, 78, 78);
+    --light-gray-color: rgb(219, 219, 219);
+    --background-color-window: rgb(255, 255, 255)
+}
+
+@font-face {
+    font-family: "BricolageGrotesque";
+    src: url("../fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf") format("truetype");
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variation-settings:
+        "wdth" 100,
+        "wght" 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "BricolageGrotesque", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+    /* background-image: url(/images/backgrounds/cloth/cloth055.jpg); */
+    background-color: beige;
+
+    margin: 0;
+    padding: 30px;
+
+    /* cursor: url('/cursor.png'), auto; */
+}
+
+footer {
+    margin-top: 100px;
+    background-color: white;
+}
+
+#whitebg {
+    background-color: white;
+    border: 6px solid #29521d;
+    width: max-content;
+    padding: 10px;
+
+    margin-bottom: 50px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.rug-caption {
+    width: max-content;
+}
+
+#rug1 {
+    background-image: url(/images/treasures/rug/rug_1.webp);
+    width: 362px;
+    height: 688px;
+
+    padding: 20px;
+
+    /* border: 2px solid black; */
+}
+
+#rug1 img {
+    width: 200px;
+    filter: drop-shadow(0px 0px 5px rgba(48, 193, 255, 0.731)) drop-shadow(0px 0px 15px rgb(48, 193, 255));
+}
+
+#rug2 {
+    background-image: url(/images/treasures/rug/rug_2.webp);
+    width: 367px;
+    height: 534px;
+
+    padding: 20px;
+
+    /* border: 2px solid black; */
+}
+
+#rug2 img {
+    width: 200px;
+    filter: drop-shadow(0px 0px 5px rgba(48, 193, 255, 0.731)) drop-shadow(0px 0px 15px rgb(48, 193, 255));
+}
+
+#rug8 {
+    background-image: url(/images/treasures/rug/rug_8.webp);
+    width: 421px;
+    height: 593px;
+
+    padding: 20px;
+
+    /* border: 2px solid black; */
+}
+
+#rug8 img {
+    width: 200px;
+    filter: drop-shadow(0px 0px 5px rgba(48, 193, 255, 0.731)) drop-shadow(0px 0px 15px rgb(48, 193, 255));
+}
+
+#rug9 {
+    background-image: url(/images/treasures/rug/rug_9.webp);
+    width: 418px;
+    height: 596px;
+
+    padding: 20px;
+
+    /* border: 2px solid black; */
+}
+
+#rug9 img {
+    width: 200px;
+    filter: drop-shadow(0px 0px 5px rgba(48, 193, 255, 0.731)) drop-shadow(0px 0px 15px rgb(48, 193, 255));
+}
+
+.mac-window {
+    z-index: 10;
+    background-color: var(--background-color-window);
+    filter: drop-shadow(0 0 10px #0000006d);
+    border-radius: 8px;
+    width: 600px;
+    margin: auto auto 30px auto;
+    border: 1.4px solid var(--gray-color);
+}
+
+.mac-content {
+    padding: 20px;
+}
+    
+.mac-window-buttons {
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1.4px solid var(--gray-color);
+    background-color: var(--light-gray-color);
+    display: flex;
+    flex-wrap: wrap;
+    height: 25px;
+}
+
+.mac-window-buttons p {
+    margin-left: 400px;
+    color: var(--gray-color);
+}
+
+.mac-button {
+    margin: 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1.4px solid var(--gray-color);
+}
+
+.mac-button#red {
+    background-color: rgb(226, 41, 41);
+}
+
+.mac-button#red:hover {
+    background-color: rgb(255, 121, 121);
+}
+
+.mac-button#yellow {
+    background-color: rgb(255, 187, 0);
+}
+
+.mac-button#yellow:hover {
+    background-color: rgb(255, 227, 128)
+}
+
+.mac-button#green {
+    background-color: rgb(44, 171, 44);
+}
+
+.mac-button#green:hover {
+    background-color: rgb(102, 206, 102);
+}
+
+/* popups */
+
+.tippy-box[data-theme~='green'] {
+    background-color: #29521d;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: 0 0px 12px #29521d;
+
+}
+
+.tippy-box[data-theme~='green']>.tippy-arrow::before {
+
+    color: white;
+    transform: translateY(2px);
+}
