@@ -22,17 +22,43 @@
     padding: 0;
 }
 
+hr {
+    border: none;
+    border-bottom: 8px double rgb(144, 174, 137);
+}
+
+html ::-webkit-scrollbar {
+    width: 20px;
+    background-color: #bece8c;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background-color: #b5cf5f;
+    border-radius: 10px;
+    border: 2px solid #88975a;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+    background-color: #a2b75d;
+}
+
 body {
     font-family: "BricolageGrotesque", Arial, Helvetica, sans-serif;
     font-size: 30px;
+    height: 100%;
 
     /* background-image: url(/images/backgrounds/cloth/cloth055.jpg); */
     background-color: beige;
 
     margin: 0;
-    padding: 30px;
+    padding: 0;
 
     /* cursor: url('/cursor.png'), auto; */
+}
+
+#main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 footer {
@@ -53,71 +79,13 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
-}
+    /* justify-content: space-evenly; */
+    padding: 50px 0 50px 0;
 
-.rug-caption {
-    width: max-content;
-}
+    height: 100vh;
 
-#rug1 {
-    background-image: url(/images/treasures/rug/rug_1.webp);
-    width: 362px;
-    height: 688px;
-
-    padding: 20px;
-
-    /* border: 2px solid black; */
-}
-
-#rug1 img {
-    width: 200px;
-    filter: drop-shadow(0px 0px 5px rgba(48, 193, 255, 0.731)) drop-shadow(0px 0px 15px rgb(48, 193, 255));
-}
-
-#rug2 {
-    background-image: url(/images/treasures/rug/rug_2.webp);
-    width: 367px;
-    height: 534px;
-
-    padding: 20px;
-
-    /* border: 2px solid black; */
-}
-
-#rug2 img {
-    width: 200px;
-    filter: drop-shadow(0px 0px 5px rgba(48, 193, 255, 0.731)) drop-shadow(0px 0px 15px rgb(48, 193, 255));
-}
-
-#rug8 {
-    background-image: url(/images/treasures/rug/rug_8.webp);
-    width: 421px;
-    height: 593px;
-
-    padding: 20px;
-
-    /* border: 2px solid black; */
-}
-
-#rug8 img {
-    width: 200px;
-    filter: drop-shadow(0px 0px 5px rgba(48, 193, 255, 0.731)) drop-shadow(0px 0px 15px rgb(48, 193, 255));
-}
-
-#rug9 {
-    background-image: url(/images/treasures/rug/rug_9.webp);
-    width: 418px;
-    height: 596px;
-
-    padding: 20px;
-
-    /* border: 2px solid black; */
-}
-
-#rug9 img {
-    width: 200px;
-    filter: drop-shadow(0px 0px 5px rgba(48, 193, 255, 0.731)) drop-shadow(0px 0px 15px rgb(48, 193, 255));
+    overflow-y: auto;
+    /* scrollbar-width: none; */
 }
 
 .mac-window {
@@ -125,8 +93,8 @@ footer {
     background-color: var(--background-color-window);
     filter: drop-shadow(0 0 10px #0000006d);
     border-radius: 8px;
-    width: 600px;
-    margin: auto auto 30px auto;
+    width: 90%;
+    margin: auto;
     border: 1.4px solid var(--gray-color);
 }
 
@@ -178,6 +146,54 @@ footer {
 
 .mac-button#green:hover {
     background-color: rgb(102, 206, 102);
+}
+
+.caption {
+    padding: 20px;
+    width: max-content;
+}
+
+#rings {
+    /* background-image: url(/images/treasures/rug/rug_1.webp); */
+    /* width: 362px;
+    height: 688px; */
+
+    padding: 20px;
+
+    /* border: 2px solid black; */
+}
+
+.ring-img {
+    width: 120px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.566));
+}
+
+#ring-plate {
+    width: 100%;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.566));
+}
+
+#figures {
+    /* background-image: url(/images/treasures/rug/rug_2.webp); */
+    /* width: 367px;
+    height: 534px; */
+
+    padding: 20px;
+
+    /* border: 2px solid black; */
+}
+
+#figures img {
+    width: 150px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.566));
+}
+
+#games {
+    padding: 20px;
+}
+
+#games img {
+    height: 300px;
 }
 
 /* popups */
