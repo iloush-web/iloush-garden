@@ -61,6 +61,14 @@ body {
     grid-template-columns: 2fr 1fr;
 }
 
+#right-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #29521d;
+}
+
 footer {
     margin-top: 100px;
     background-color: white;
@@ -89,12 +97,11 @@ footer {
 }
 
 .mac-window {
-    z-index: 10;
     background-color: var(--background-color-window);
     filter: drop-shadow(0 0 10px #0000006d);
     border-radius: 8px;
     width: 90%;
-    margin: auto;
+    height: max-content;
     border: 1.4px solid var(--gray-color);
 }
 
@@ -171,6 +178,22 @@ footer {
 #ring-plate {
     width: 100%;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.566));
+}
+
+#accessories {
+    padding: 20px;
+}
+
+#accessories img {
+    height: 150px;
+}
+
+#candles {
+    padding: 20px;
+}
+
+#candles img {
+    height: 150px;
 }
 
 #figures {

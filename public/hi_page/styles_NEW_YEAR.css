@@ -21,14 +21,14 @@
     --text-selected-color: rgb(255, 255, 255);
     --text-shadow: rgb(98, 253, 106);
 
-    --footer-bg-color: #d8efd4ed;
-    --footer-border-color: #80a078ed;
+    /* --footer-bg-color: #d8efd4ed;
+    --footer-border-color: #80a078ed; */
 
-    /* --footer-bg-color: #d4e9efed;
-    --footer-border-color: #7978a0ed; */
+    --footer-bg-color: #d4e9efed;
+    --footer-border-color: #7978a0ed;
 
-    --card-shadow-color: rgb(113, 255, 108);
-    /* --card-shadow-color: rgba(53, 178, 255, 0); */
+    /* --card-shadow-color: rgb(113, 255, 108); */
+    --card-shadow-color: rgba(53, 178, 255, 0);
 
 
     --background-color-menu: rgba(246, 245, 242, 0.945);
@@ -94,7 +94,11 @@ body {
     font-size: var(--font-size);
 
     /* MAIN */
-    background-image: url("/images/backgrounds/nature/natfl203.jpg");
+    /* background-image: url("/images/backgrounds/nature/natfl031.jpg"); */
+
+    background-image: url("/images/backgrounds/holidays/holid029.gif");
+
+    /* background-image: url("/images/backgrounds/cloth/cloth068.jpg"); */
     margin: 0;
     padding: 10px;
 
@@ -266,6 +270,14 @@ mark {
   height: 100px;
 }
 
+#new-year {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 580px;
+  right: -600px;
+}
+
 #arrow {
   transform: rotate(160deg);
   position: relative;
@@ -311,7 +323,7 @@ mark {
   height: 500px;
   width: 1112px;
   background-image: url("/hi_page/images/console6.png");
-  filter: drop-shadow(0px 0px 10px #644b36) drop-shadow(0px 0px 4px #1b1917);
+  filter: drop-shadow(0px 0px 10px #393664) drop-shadow(0px 0px 4px #17171b);
 }
 
 #console-screen {  
@@ -533,10 +545,10 @@ mark {
 
 
 .text-animation {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 0.5s;
+  opacity: 0; /* начальное значение непрозрачности */
+  animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
+  animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+  animation-duration: 0.5s; /* длительность анимации в 1 секунду */
 }
 
 @keyframes fadeIn {
