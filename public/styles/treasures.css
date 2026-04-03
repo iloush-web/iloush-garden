@@ -69,6 +69,16 @@ body {
     background-color: #29521d;
 }
 
+.right-img {
+    max-width: 100%;
+}
+
+#item-content h1 {
+    font-size: 42px;
+}
+
+
+
 footer {
     margin-top: 100px;
     background-color: white;
