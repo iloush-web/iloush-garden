@@ -6,7 +6,9 @@
     --text-color: #000000;
     --text-color-light: #ffffff;
     --text-color_lighter: #383838;
-    --text-color-highlight: #064d0a;
+    /* --text-color-highlight: #064d0a; */
+    --text-color-highlight: #642b01;
+
 
     --teghlight: #cfe0cf;
 
@@ -84,7 +86,9 @@
 body {
     font-family: var(--text-font);
     font-size: var(--font-size);
-    background-image: url("/images/mainbackground.jpg");
+    /* background-image: url("/images/mainbackground.jpg"); */
+    background-image: url("/images/backgrounds/autumn/food043.jpg");
+
     margin: 0;
     padding: 10px;
 

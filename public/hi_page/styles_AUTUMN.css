@@ -6,7 +6,9 @@
     --text-color: #000000;
     --text-color-light: #ffffff;
     --text-color_lighter: #383838;
-    --text-color-highlight: #064d0a;
+    /* --text-color-highlight: #064d0a; */
+    --text-color-highlight: #642b01;
+
 
     --teghlight: #cfe0cf;
 
@@ -21,13 +23,16 @@
     --text-selected-color: rgb(255, 255, 255);
     --text-shadow: rgb(98, 253, 106);
 
-    --footer-bg-color: #d8efd4ed;
-    --footer-border-color: #80a078ed;
+    --footer-bg-color: rgb(255, 178, 85);
+    --footer-border-color: rgb(255, 124, 16);
 
     /* --footer-bg-color: #d4e9efed;
     --footer-border-color: #7978a0ed; */
 
-    --card-shadow-color: rgb(113, 255, 108);
+    --arrow-filter: hue-rotate(250deg);
+    --card-hovered-shadow-color: rgb(255, 237, 122);
+
+    --card-shadow-color: rgb(253, 81, 13);
     /* --card-shadow-color: rgba(53, 178, 255, 0); */
 
 
@@ -94,7 +99,8 @@ body {
     font-size: var(--font-size);
 
     /* MAIN */
-    background-image: url("/images/backgrounds/nature/natfl203.jpg");
+    background-image: url("/images/backgrounds/autumn/holid053.gif");
+    
     margin: 0;
     padding: 10px;
 
@@ -256,17 +262,39 @@ mark {
 
 #bubble {
   position: relative;
-  height: 30px;
-  width: 30px;
+  height: 80px;
+  margin-bottom: -0px;
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+
+  
   top: 15px;
-  right: -500px;
+  /* left: 50%; */
 }
 
 #bubble img {
-  height: 100px;
+  animation: both;
+  padding-top: 20px;
+  height: 90px;
+  
+  animation: animate_grow 2s infinite;
+}
+
+@keyframes animate_grow {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		transform: scale3d(1.1, 1.02, 1.02);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
 }
 
 #arrow {
+  filter: var(--arrow-filter);
   transform: rotate(160deg);
   position: relative;
   height: 10px;
@@ -303,7 +331,7 @@ mark {
 }
 
 #card img:hover{
-  filter: drop-shadow(0px 0px 10px rgb(122, 237, 255)) drop-shadow(0px 0px 5px rgb(122, 242, 255));
+  filter: drop-shadow(0px 0px 10px var(--card-hovered-shadow-color)) drop-shadow(0px 0px 5px var(--card-hovered-shadow-color));
 }
 
 #console-bg {
